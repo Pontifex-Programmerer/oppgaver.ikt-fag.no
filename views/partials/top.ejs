@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ikt-fag.no</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <% if(typeof title === 'undefined') { %>
+        <title>ikt-fag.no</title>
+    <% } else { %>
+        <title><%=title%></title>
+    <% } %>
 </head>
 <body>
