@@ -1,0 +1,24 @@
+{
+    "courseTitle": "string",                       // Title of the course
+    "introduction": "string",                      // Introduction to the course
+    "prerequisites":"string"                       // String
+    ,
+    "chapters": [                                  // Array of chapters
+      {
+        "chapterTitle": "string",                  // Title of the chapter
+        "description": "string",                   // Description of the chapter
+        "coveredTopics": [                         // Array of topics covered in the chapter
+          "string"                                 // Each topic is a string
+        ],
+        "tasks": [                                 // Array of tasks in the chapter
+          {
+            "taskTitle": "string",                 // Title of the task
+            "instructions": [                      // Array of instructions for the task
+              "string"                             // Each instruction is a string
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
