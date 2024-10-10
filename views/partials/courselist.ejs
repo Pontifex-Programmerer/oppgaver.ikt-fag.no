@@ -2,8 +2,8 @@
 <section class="tasklist">
     
 <% if(typeof links !== 'undefined' && Array.isArray(links)) { %>
-    <ul class="links">
-        <h1>Solve these tasks:</h1>
+    <ul class="links list">
+        <h1 class="dark">Oppgaver fordelt per kurs:</h1>
         <% for(link of links) { %>
             <li>
                 <a href=<%=link.href %>><%=link.link %></a>
