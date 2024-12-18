@@ -1,0 +1,73 @@
+[
+    {
+      "alias": "data",
+      "pool": 21,
+      "webserver": "10.10.1.136"
+    },
+    {
+      "alias": "walle",
+      "pool": 22,
+      "webserver": "10.10.1.145"
+    },
+    {
+      "alias": "cortana",
+      "pool": 23,
+      "webserver": "10.10.1.135"
+    },
+    {
+      "alias": "tars",
+      "pool": 24,
+      "webserver": "10.10.1.143"
+    },
+    {
+      "alias": "baymax",
+      "pool": 25,
+      "webserver": "10.10.1.132"
+    },
+    {
+      "alias": "c3po",
+      "pool": 26,
+      "webserver": "10.10.1.134"
+    },
+    {
+      "alias": "theculture",
+      "pool": 27,
+      "webserver": "10.10.1.144"
+    },
+    {
+      "alias": "t800",
+      "pool": 31,
+      "webserver": "10.10.1.142"
+    },
+    {
+      "alias": "kitt",
+      "pool": 29,
+      "webserver": "10.10.1.140"
+    },
+    {
+      "alias": "deliverator",
+      "pool": 30,
+      "webserver": "10.10.1.137"
+    },
+    {
+      "alias": "bishop",
+      "pool": 32,
+      "webserver": "10.10.1.133"
+    },
+    {
+      "alias": "gigolojoe",
+      "pool": 33,
+      "webserver": "10.10.1.138"
+    },
+    {
+      "alias": "jarvis",
+      "pool": 34,
+      "webserver": "10.10.1.139"
+    },
+    {
+      "alias": "ash",
+      "pool": 35,
+      "webserver": "10.10.1.131"
+    }
+]
+  

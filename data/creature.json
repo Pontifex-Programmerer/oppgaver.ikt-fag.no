@@ -1,0 +1,78 @@
+[
+    {
+      "alias": "unicorn",
+      "pool": 61,
+      "webserver": "10.10.1.205"
+    },
+    {
+      "alias": "phoenix",
+      "pool": 62,
+      "webserver": "10.10.1.202"
+    },
+    {
+      "alias": "pegasus",
+      "pool": 63,
+      "webserver": "10.10.1.201"
+    },
+    {
+      "alias": "fairy",
+      "pool": 64,
+      "webserver": "10.10.1.195"
+    },
+    {
+      "alias": "mermaid",
+      "pool": 65,
+      "webserver": "10.10.1.200"
+    },
+    {
+      "alias": "angel",
+      "pool": 66,
+      "webserver": "10.10.1.191"
+    },
+    {
+      "alias": "griffin",
+      "pool": 67,
+      "webserver": "10.10.1.197"
+    },
+    {
+      "alias": "centaur",
+      "pool": 68,
+      "webserver": "10.10.1.192"
+    },
+    {
+      "alias": "dragon",
+      "pool": 69,
+      "webserver": "10.10.1.194"
+    },
+    {
+      "alias": "sphinx",
+      "pool": 70,
+      "webserver": "10.10.1.203"
+    },
+    {
+      "alias": "kelpie",
+      "pool": 71,
+      "webserver": "10.10.1.198"
+    },
+    {
+      "alias": "thunderbird",
+      "pool": 72,
+      "webserver": "10.10.1.204"
+    },
+    {
+      "alias": "gnome",
+      "pool": 73,
+      "webserver": "10.10.1.196"
+    },
+    {
+      "alias": "kitsune",
+      "pool": 74,
+      "webserver": "10.10.1.199"
+    },
+    {
+      "alias": "djinn",
+      "pool": 75,
+      "webserver": "10.10.1.193"
+    }
+  ]
+  
