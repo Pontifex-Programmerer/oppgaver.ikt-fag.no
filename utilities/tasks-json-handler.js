@@ -13,9 +13,9 @@ const taskDir = 'tasks-json'
 const path=require('path')
 
 //absolute path to 'tasks-json'
-const COURSEDIR = createCoursePath();
+const COURSEDIR = getCoursePath();
 
-function createCoursePath(){
+function getCoursePath(){
     return path.join(process.cwd(), taskDir);
 }
 
@@ -32,8 +32,8 @@ function getFileList() {
 }
 
 /**
- * @returns the absoulte path to the director where all the JSON files containing information
- * about the studen worktasks is found
+ * @returns the abolute path to the directory where all the JSON files containing information
+ * about the student worktasks is found
  */
 function getCourseDir(){
     return COURSEDIR;

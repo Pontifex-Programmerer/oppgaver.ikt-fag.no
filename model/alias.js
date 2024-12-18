@@ -23,15 +23,16 @@ const aliasSchema = new Schema({
         unique: true
     },
     // webhost is the hostIP on our web-server
-    webhost: {
-        type: Number,
+    webserver: {
+        type: String,
         required: true,
         unique: true
     },
     state: {
         type: String,
         required: true,
-        enum: ['approval pending', 'active', 'suspended', 'marked for removal']
+        enum: ['inactive','approval pending', 'active', 'suspended', 'marked for removal'],
+        default: 'inactive'
     }
 });
 

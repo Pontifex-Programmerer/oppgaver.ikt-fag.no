@@ -1,3 +1,5 @@
+// Geir Hilmersen 18 Desember 2024
+
 const mongoose = require('mongoose');
 const validator = require('validator');
 const { Schema } = mongoose;
