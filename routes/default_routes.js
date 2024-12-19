@@ -5,6 +5,6 @@ const {
     index
 } = require('../controllers/default_controller')
 
-router.get('/', index)
+router.get('/', index);
 
 module.exports=router;

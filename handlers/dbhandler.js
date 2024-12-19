@@ -1,19 +1,32 @@
 const mongoose = require('mongoose');
+let db = null;
 
 async function connectToDB(mongostring, dbName){
-    let result = null;
     try {
         console.info(`attempting connection to database: ${mongostring}`)
-         result = await mongoose.connect(mongostring, {dbName});
+         db = await mongoose.connect(mongostring, {dbName});
     } catch (error) {
         console.error('Error when connecting to database', error.message);
     } finally {
-        if(result){
+        if(db){
             console.info('Successfully connected to ', mongostring)
         }
     }
 }
 
+async function disconnectFromDB(){
+    if(db){
+        try {
+
+            await mongoose.disconnect();
+            console.log('Disconnected from db')
+        } catch(error){
+            console.error(error.message);
+        }
+    }
+}
+
 module.exports={
-    connectToDB
+    connectToDB,
+    disconnectFromDB
 }
