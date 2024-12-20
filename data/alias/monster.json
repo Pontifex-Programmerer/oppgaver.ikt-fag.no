@@ -1,0 +1,78 @@
+[
+    {
+      "alias": "demon",
+      "pool": 81,
+      "webserver": "10.10.1.155"
+    },
+    {
+      "alias": "vampire",
+      "pool": 82,
+      "webserver": "10.10.1.163"
+    },
+    {
+      "alias": "werewolf",
+      "pool": 83,
+      "webserver": "10.10.1.165"
+    },
+    {
+      "alias": "minotaur",
+      "pool": 84,
+      "webserver": "10.10.1.161"
+    },
+    {
+      "alias": "gorgon",
+      "pool": 85,
+      "webserver": "10.10.1.156"
+    },
+    {
+      "alias": "basilisk",
+      "pool": 86,
+      "webserver": "10.10.1.152"
+    },
+    {
+      "alias": "kraken",
+      "pool": 87,
+      "webserver": "10.10.1.159"
+    },
+    {
+      "alias": "succubus",
+      "pool": 88,
+      "webserver": "10.10.1.162"
+    },
+    {
+      "alias": "charybdis",
+      "pool": 89,
+      "webserver": "10.10.1.154"
+    },
+    {
+      "alias": "harpy",
+      "pool": 90,
+      "webserver": "10.10.1.157"
+    },
+    {
+      "alias": "wendigo",
+      "pool": 91,
+      "webserver": "10.10.1.164"
+    },
+    {
+      "alias": "lamia",
+      "pool": 92,
+      "webserver": "10.10.1.160"
+    },
+    {
+      "alias": "banshee",
+      "pool": 93,
+      "webserver": "10.10.1.151"
+    },
+    {
+      "alias": "cerberus",
+      "pool": 94,
+      "webserver": "10.10.1.153"
+    },
+    {
+      "alias": "hydra",
+      "pool": 95,
+      "webserver": "10.10.1.158"
+    }
+  ]
+  

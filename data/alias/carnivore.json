@@ -1,0 +1,78 @@
+[
+    {
+      "alias": "lion",
+      "pool": 41,
+      "webserver": "10.10.1.181"
+    },
+    {
+      "alias": "crocodile",
+      "pool": 42,
+      "webserver": "10.10.1.176"
+    },
+    {
+      "alias": "cheetah",
+      "pool": 43,
+      "webserver": "10.10.1.174"
+    },
+    {
+      "alias": "hyena",
+      "pool": 44,
+      "webserver": "10.10.1.178"
+    },
+    {
+      "alias": "caracal",
+      "pool": 45,
+      "webserver": "10.10.1.173"
+    },
+    {
+      "alias": "serval",
+      "pool": 46,
+      "webserver": "10.10.1.184"
+    },
+    {
+      "alias": "jackal",
+      "pool": 47,
+      "webserver": "10.10.1.179"
+    },
+    {
+      "alias": "wolf",
+      "pool": 48,
+      "webserver": "10.10.1.185"
+    },
+    {
+      "alias": "badger",
+      "pool": 49,
+      "webserver": "10.10.1.172"
+    },
+    {
+      "alias": "civet",
+      "pool": 50,
+      "webserver": "10.10.1.175"
+    },
+    {
+      "alias": "genet",
+      "pool": 51,
+      "webserver": "10.10.1.177"
+    },
+    {
+      "alias": "leopard",
+      "pool": 52,
+      "webserver": "10.10.1.180"
+    },
+    {
+      "alias": "aardwolf",
+      "pool": 53,
+      "webserver": "10.10.1.171"
+    },
+    {
+      "alias": "mongoose",
+      "pool": 54,
+      "webserver": "10.10.1.182"
+    },
+    {
+      "alias": "ratel",
+      "pool": 55,
+      "webserver": "10.10.1.183"
+    }
+  ]
+  

@@ -1,0 +1,78 @@
+[
+    {
+        "alias": "hal9000",
+        "pool": 1,
+        "webserver": "10.10.1.115"
+    },
+    {
+      "alias": "skynet",
+      "pool": 2,
+      "webserver": "10.10.1.121"
+    },
+    {
+      "alias": "snowcrash",
+      "pool": 3,
+      "webserver": "10.10.1.122"
+    },
+    {
+      "alias": "wintermute",
+      "pool": 4,
+      "webserver": "10.10.1.125"
+    },
+    {
+      "alias": "computer",
+      "pool": 5,
+      "webserver": "10.10.1.112"
+    },
+    {
+      "alias": "viki",
+      "pool": 6,
+      "webserver": "10.10.1.124"
+    },
+    {
+      "alias": "proteus4",
+      "pool": 7,
+      "webserver": "10.10.1.119"
+    },
+    {
+      "alias": "ed209",
+      "pool": 8,
+      "webserver": "10.10.1.113"
+    },
+    {
+      "alias": "mcp",
+      "pool": 9,
+      "webserver": "10.10.1.116"
+    },
+    {
+      "alias": "gerty",
+      "pool": 10,
+      "webserver": "10.10.1.114"
+    },
+    {
+      "alias": "redqueen",
+      "pool": 11,
+      "webserver": "10.10.1.120"
+    },
+    {
+      "alias": "mother",
+      "pool": 12,
+      "webserver": "10.10.1.118"
+    },
+    {
+      "alias": "terminator",
+      "pool": 13,
+      "webserver": "10.10.1.123"
+    },
+    {
+      "alias": "megatron",
+      "pool": 14,
+      "webserver": "10.10.1.117"
+    },
+    {
+      "alias": "borg",
+      "pool": 15,
+      "webserver": "10.10.1.111"
+    }
+]
+  

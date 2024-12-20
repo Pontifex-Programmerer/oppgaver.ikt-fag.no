@@ -1,0 +1,114 @@
+{
+    "courseTitle": "HTML CSS CRASH COURSE",
+    "introduction": "Oppgavene i dette dokumentet er utformet på bakgrunn av kurset “HTML/CSS Crash Course” by Shaun JP aka net ninja. Oppgavene er inndelt etter kapitlene i kurset, og er utformet slik at du får muligheten til å øve på innholdet i videoen, og vise til din lærer at du har forstått innholdet i kurset.",
+    "prerequisites": [
+      "Forstå hvordan du oppretter og sletter mapper og filer på din egen PC.",
+      "Opprett en mappestruktur for dette kurset, og lag en ny mappe for hvert kapittel."
+    ],
+    "chapters": [
+      {
+        "chapterTitle": "1. Introduction to HTML",
+        "description": "Før du gjør disse oppgavene, sørg for at du har fulgt kurset og at du har gjort, eller føler deg sikker på at du har forstått hvordan du skal gjøre det Shaun gjør i videoen.",
+        "coveredTopics": [
+          "VSCode som redigeringsprogram for kode",
+          "Liveserver for å vise nettsider, og for å automatisere “refresh” i nettleseren når du endrer på nettsiden din.",
+          "Grunnstruktur i et html dokument",
+          "Inspect mode Chrome"
+        ],
+        "tasks": [
+          {
+            "taskTitle": "Oppgave 1 - Installér VSCode",
+            "instructions": [
+              "Sørg for at du har VSCode lastet ned og installert.",
+              "- du kan laste det ned her"
+            ]
+          },
+          {
+            "taskTitle": "Oppgave 2 - Et lite prosjekt",
+            "instructions": [
+              "Lag en mappe og kall den '1_introduksjon'.",
+              "I mappen introduksjon, lag en fil som du kaller index.html.",
+              "Bruk VSCode til å redigere index.html slik at den inneholder følgende:",
+              "- De grunnleggende tag’ene som alle HTML sider må inneholde.",
+              "- Lag en 'h1' tag som sier 'Velkommen til min side'.",
+              "- Lag en 'p' tag som inneholder teksten 'HTML er ikke så vanskelig hvis du barer lærer det i små posjoner'.",
+              "Sjekk siden ved å dobbelklikke på filen."
+            ]
+          },
+          {
+            "taskTitle": "Oppgave 3 - Liveserver",
+            "instructions": [
+              "Installér Liveserver plugin.",
+              "Hold nettleseren din åpen på en side av skjermen og VSCode på den andre siden av skjermen.",
+              "Legg til en 'h2' tag som sier 'Liveserver addon' og lagre siden din.",
+              "- Observér at 'h2' tag’en kommer opp på siden din uten at du trenger å trykke “refresh”.",
+              "Bruk ctrl-i for å åpne 'inspect mode' og sjekk at du faktisk kan lese din egen kode der."
+            ]
+          }
+        ]
+      },
+      {
+        "chapterTitle": "2. HTML Basics",
+        "description": "Temaer som dekkes: Tags, Attributter, Kommentarer.",
+        "coveredTopics": [
+          "Tags [ small, em, strong, h, ul, li, div, span, br, img, blockquote ]",
+          "Attributter [ cite, alt, src, href ]",
+          "Kommentarer - Hvordan du lager dem, og hvorfor."
+        ],
+        "tasks": [
+          {
+            "taskTitle": "Oppgave 1 - opprett prosjektet",
+            "instructions": [
+              "Lag en mappe og kall den '2_HTML_basics'.",
+              "Opprett en ny fil i mappen, index.html, og skriv grunnstrukturen til en HTML-fil.",
+              "Legg til [ditt navn] som <title>.",
+              "Øverst i filen, over <!doctype html> legg inn dagens dato, og ditt navn som kommentar.",
+              "Kjør liveserver og sjekk at siden din virker som den skal."
+            ]
+          },
+          {
+            "taskTitle": "Oppgave 2 - favorittdyr",
+            "instructions": [
+              "Lag en ny 'div' på siden din.",
+              "Inne i 'div’en', lag en 'h1' tag og skriv navnet på favorittdyret ditt.",
+              "Under 'h1' tag’en, lag en 'p' tag.",
+              "- Bruk chatgpt eller lignende og be den skrive 250 ord om favorittdyret ditt.",
+              "- Lim teksten inn i 'p' tag’en.",
+              "Sjekk at alle tag’ene dine er riktig ordnet og at innrykkene er korrekt. Formattering er alt.",
+              "Avslutt med en 'hr' tag etter 'div’en' din."
+            ]
+          }
+        ]
+      },
+      {
+        "chapterTitle": "3. HTML Forms",
+        "description": "Skap HTML-former som inkluderer tekstfelter, select bokser, radio buttons, og submit-knapper.",
+        "tasks": [
+          {
+            "taskTitle": "Oppgave 1 - Opprett en ny side",
+            "instructions": [
+              "Opprett en mappe og kall den '3_HTML-Forms'.",
+              "Lag en index-fil med grunnstrukturen til en HTML-fil.",
+              "Legg til 'title', og la title være 'I form!'.",
+              "Lag en 'h1' øverst med innholdet 'A form, uh, that is good for absolutely nothing, uh!'"
+            ]
+          }
+        ]
+      },
+      {
+        "chapterTitle": "4. CSS Basics",
+        "description": "Lær grunnleggende CSS-styling for å formatere HTML-sider.",
+        "tasks": [
+          {
+            "taskTitle": "Oppgave 1 - opprett og link en CSS fil",
+            "instructions": [
+              "Opprett en ny mappe i 4_CSS_Basics som du kaller ‘css’.",
+              "I den nye CSS mappen, opprett en fil som du kaller ‘main.css’.",
+              "Sørg for at alle HTML-filene har en link til ‘main.css’."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

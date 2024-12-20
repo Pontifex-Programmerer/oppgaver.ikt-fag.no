@@ -3,7 +3,7 @@ const app = express();
 const default_routes = require('./routes/default_routes');
 const path = require('path');
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 
 app.set('view engine', 'ejs');
