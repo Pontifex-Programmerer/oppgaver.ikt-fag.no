@@ -11,7 +11,6 @@ const aliasSchema = new Schema({
     // User is the user that a student registered
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
         unique: true,
         required: false,
         default: null

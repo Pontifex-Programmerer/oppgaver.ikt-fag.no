@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "dev": "npx nodemon app.js"
+    "dev": "nodemon"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "mongoose": "^8.9.1",
-    "npm": "^10.9.0"
+    "npm": "^10.9.0",
+    "validator": "^13.12.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

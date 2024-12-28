@@ -1,0 +1,18 @@
+<%-include('./partials/top') %>
+    <section class="input-form">
+        <form action="/log-in" method="POST">
+            <%-include('./partials/messagefield') %>
+            <span class="row">
+                <label for="email">email</label>
+                <input name="email" required type="text" placeholder="you@email.provider" value= <%=typeof(email)==="string" ? email:""%> >
+            </span>
+            <span class="row">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="* * * * * * *" required>
+            </span>
+            <span class="row">
+                <input type="submit" value="log in!">
+            </span>
+        </form>
+    </section>
+<%-include('./partials/bottom') %>

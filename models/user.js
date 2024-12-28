@@ -3,36 +3,40 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const { Schema } = mongoose;
-    
-const userSchema = new Schema({
-    givenName: {
-        type: String,
-        unique: true,
+
+// Student name and email is provided by the authentication server
+const studentSchema = new Schema({
+    auth_id: {
+        type: mongoose.Schema.ObjectId,
         required: true
     },
-    group: {
+    classCode: {
         type: String,
         required: true,
         enum: ["IMA","IMB","IMC","ITA","ITB","faculty"]
     },
-    email: {
+    applicationRole: {
         type: String,
-        required: [true, "an email is required to register!"],
-        validate: validator.isEmail,
-        message: props => `${props.value} is not a valid email!`
-    },
-    role: {
-        type: String,
-        enum: ["student","teacher","admin"]
+        enum: ["student","teacher","admin"],
+        default: "student"
     },
     alias: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: String,
         ref: 'Alias',
         unique: true,
         required: true,
         default: null
     }
 });
-const User = mongoose.model('User', userSchema);
 
-module.exports=User;
+studentSchema.pre('save', async ()=>{
+    try{
+        const result = await fetch("http://auth.ikt-fag.no/register")
+    } catch (error){
+
+    }
+})
+
+const Student = mongoose.model('Student', studentSchema);
+
+module.exports=Student;

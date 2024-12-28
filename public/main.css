@@ -38,6 +38,47 @@ body {
 .dark {
     color:var(--bg-dark);
 }
+
+div.hidden {
+    display: none;
+}
+
+.input-form form {
+    background-color: var(--bg-dark);
+    color: var(--text-adjacent-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 25px;
+    text-align: center;
+    width: 90ch;
+
+}
+
+.input-form h1 {
+    font-size: 3rem;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.row > * {
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 10px;
+    width: 100%;
+}
+.row > label {
+    display: none;
+}
+
+.input-form > * {
+    display: inline-block;
+    width: 45%;
+}
+
 .logo {
     text-align: center;
     font-size: 3rem;
