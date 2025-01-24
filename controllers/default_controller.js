@@ -35,12 +35,24 @@ const index = (req, res)=> {
 }
 
 
-const login = (req, res)=> {
+const login = async (req, res)=> {
     let feedback = accessDenied();
-
     try {
-        const json = req.body;
-        feedback = createFeedback(200, "Access granted!", true, json);
+        const {email,password} = req.body;
+        console.log(email,password);
+        const result = await fetch(`HTTP://${process.env.AUTHSERVER}/login-user`, {
+            method:"POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({email,password})
+        });
+        console.log(result);
+        if(result.ok){
+            const json = await result.json();
+            console.log('json', json);
+            feedback = createFeedback(200, "Access granted!", true, json);
+        }
 
     } catch(error) {
         feedback=internalServerError();
