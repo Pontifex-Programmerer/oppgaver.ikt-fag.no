@@ -1,3 +1,10 @@
+const {
+    createFeedback,
+    accessDenied,
+    notAuthorized,
+    resourceNotFound,
+    internalServerError
+} = require('../handlers/httpFeedbackHandler');
 
 const index = (req, res)=> {
     res.render('../views/index', {
@@ -26,6 +33,22 @@ const index = (req, res)=> {
         ]
     });
 }
+
+
+const login = (req, res)=> {
+    let feedback = accessDenied();
+
+    try {
+        const json = req.body;
+        feedback = createFeedback(200, "Access granted!", true, json);
+
+    } catch(error) {
+        feedback=internalServerError();
+    }
+    res.status(feedback.statuscode).json(feedback);
+}
+
 module.exports={
-    index
+    index,
+    login
 }

@@ -19,7 +19,7 @@ async function disconnectFromDB(){
         try {
 
             await mongoose.disconnect();
-            console.log('Disconnected from db')
+            console.info('Disconnected from db')
         } catch(error){
             console.error(error.message);
         }
