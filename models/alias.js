@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const aliasSchema = new Schema({
-    // alias is a predetermined alias as implemented in active directory
+    // alias is a predetermined alias and has to match a user in
+    // active directory
     alias: {
         type: String,
     unique: true,

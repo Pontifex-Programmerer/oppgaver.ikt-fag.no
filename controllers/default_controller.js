@@ -26,6 +26,21 @@ const index = (req, res)=> {
         ]
     });
 }
+
+
+const login = (req, res)=> {
+    console.info('loginattempt');
+    try {
+        const json = req.body;
+        console.log(json)
+        res.status(200).json(json);
+
+    } catch(error) {
+        res.status(404).JSON({'status': 'request could not be handled'});
+    }
+}
+
 module.exports={
-    index
+    index,
+    login
 }
