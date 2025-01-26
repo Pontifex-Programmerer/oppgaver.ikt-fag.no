@@ -1,13 +1,14 @@
 const router = require('express').Router()
-const ca = require('../utilities/tasks-json-handler')
+const {
+    authenticate
+} = require('../middleware/auth');
 
 const {
-    index,
-    login
+    internalError,
 } = require('../controllers/default_controller')
 
-router.get('/', index);
 
-router.post('/login', login);
+router.get('/internal-error', internalError);
+
 
 module.exports=router;

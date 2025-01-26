@@ -2,77 +2,92 @@
     {
         "alias": "hal9000",
         "pool": 1,
-        "webserver": "10.10.1.115"
+        "webserver": "10.10.1.115",
+        "clan": "bad-ai"
     },
     {
       "alias": "skynet",
       "pool": 2,
-      "webserver": "10.10.1.121"
+      "webserver": "10.10.1.121",
+      "clan": "bad-ai"
     },
     {
       "alias": "snowcrash",
       "pool": 3,
-      "webserver": "10.10.1.122"
+      "webserver": "10.10.1.122",
+      "clan": "bad-ai"
     },
     {
       "alias": "wintermute",
       "pool": 4,
-      "webserver": "10.10.1.125"
+      "webserver": "10.10.1.125",
+      "clan": "bad-ai"
     },
     {
       "alias": "computer",
       "pool": 5,
-      "webserver": "10.10.1.112"
+      "webserver": "10.10.1.112",
+      "clan": "bad-ai"
     },
     {
       "alias": "viki",
       "pool": 6,
-      "webserver": "10.10.1.124"
+      "webserver": "10.10.1.124",
+      "clan": "bad-ai"
     },
     {
       "alias": "proteus4",
       "pool": 7,
-      "webserver": "10.10.1.119"
+      "webserver": "10.10.1.119",
+      "clan": "bad-ai"
     },
     {
       "alias": "ed209",
       "pool": 8,
-      "webserver": "10.10.1.113"
+      "webserver": "10.10.1.113",
+      "clan": "bad-ai"
     },
     {
       "alias": "mcp",
       "pool": 9,
-      "webserver": "10.10.1.116"
+      "webserver": "10.10.1.116",
+      "clan": "bad-ai"
     },
     {
       "alias": "gerty",
       "pool": 10,
-      "webserver": "10.10.1.114"
+      "webserver": "10.10.1.114",
+      "clan": "bad-ai"
     },
     {
       "alias": "redqueen",
       "pool": 11,
-      "webserver": "10.10.1.120"
+      "webserver": "10.10.1.120",
+      "clan": "bad-ai"
     },
     {
       "alias": "mother",
       "pool": 12,
-      "webserver": "10.10.1.118"
+      "webserver": "10.10.1.118",
+      "clan": "bad-ai"
     },
     {
       "alias": "terminator",
       "pool": 13,
-      "webserver": "10.10.1.123"
+      "webserver": "10.10.1.123",
+      "clan": "bad-ai"
     },
     {
       "alias": "megatron",
       "pool": 14,
-      "webserver": "10.10.1.117"
+      "webserver": "10.10.1.117",
+      "clan": "bad-ai"
     },
     {
       "alias": "borg",
       "pool": 15,
-      "webserver": "10.10.1.111"
+      "webserver": "10.10.1.111",
+      "clan": "bad-ai"
     }
 ]
   

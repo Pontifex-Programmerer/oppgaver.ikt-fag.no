@@ -2,77 +2,92 @@
     {
       "alias": "unicorn",
       "pool": 61,
-      "webserver": "10.10.1.205"
+      "webserver": "10.10.1.205",
+      "clan":"creature"
     },
     {
       "alias": "phoenix",
       "pool": 62,
-      "webserver": "10.10.1.202"
+      "webserver": "10.10.1.202",
+      "clan":"creature"
     },
     {
       "alias": "pegasus",
       "pool": 63,
-      "webserver": "10.10.1.201"
+      "webserver": "10.10.1.201",
+      "clan":"creature"
     },
     {
       "alias": "fairy",
       "pool": 64,
-      "webserver": "10.10.1.195"
+      "webserver": "10.10.1.195",
+      "clan":"creature"
     },
     {
       "alias": "mermaid",
       "pool": 65,
-      "webserver": "10.10.1.200"
+      "webserver": "10.10.1.200",
+      "clan":"creature"
     },
     {
       "alias": "angel",
       "pool": 66,
-      "webserver": "10.10.1.191"
+      "webserver": "10.10.1.191",
+      "clan":"creature"
     },
     {
       "alias": "griffin",
       "pool": 67,
-      "webserver": "10.10.1.197"
+      "webserver": "10.10.1.197",
+      "clan":"creature"
     },
     {
       "alias": "centaur",
       "pool": 68,
-      "webserver": "10.10.1.192"
+      "webserver": "10.10.1.192",
+      "clan":"creature"
     },
     {
       "alias": "dragon",
       "pool": 69,
-      "webserver": "10.10.1.194"
+      "webserver": "10.10.1.194",
+      "clan":"creature"
     },
     {
       "alias": "sphinx",
       "pool": 70,
-      "webserver": "10.10.1.203"
+      "webserver": "10.10.1.203",
+      "clan":"creature"
     },
     {
       "alias": "kelpie",
       "pool": 71,
-      "webserver": "10.10.1.198"
+      "webserver": "10.10.1.198",
+      "clan":"creature"
     },
     {
       "alias": "thunderbird",
       "pool": 72,
-      "webserver": "10.10.1.204"
+      "webserver": "10.10.1.204",
+      "clan":"creature"
     },
     {
       "alias": "gnome",
       "pool": 73,
-      "webserver": "10.10.1.196"
+      "webserver": "10.10.1.196",
+      "clan":"creature"
     },
     {
       "alias": "kitsune",
       "pool": 74,
-      "webserver": "10.10.1.199"
+      "webserver": "10.10.1.199",
+      "clan":"creature"
     },
     {
       "alias": "djinn",
       "pool": 75,
-      "webserver": "10.10.1.193"
+      "webserver": "10.10.1.193",
+      "clan":"creature"
     }
   ]
   

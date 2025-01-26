@@ -1,0 +1,6 @@
+<%-include('./partials/top')%>
+<section class="sorry error">
+    <h1>An error has occurred. We're so sorry for the inconvience!</h1>
+    <p><%=typeof(error.message)==='undefined' ? '' : error.message%></p>
+</section>
+<%-include('./partials/bottom')%>

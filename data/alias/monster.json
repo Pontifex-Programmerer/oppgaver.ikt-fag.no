@@ -2,77 +2,92 @@
     {
       "alias": "demon",
       "pool": 81,
-      "webserver": "10.10.1.155"
+      "webserver": "10.10.1.155",
+      "clan":"monster"
     },
     {
       "alias": "vampire",
       "pool": 82,
-      "webserver": "10.10.1.163"
+      "webserver": "10.10.1.163",
+      "clan":"monster"
     },
     {
       "alias": "werewolf",
       "pool": 83,
-      "webserver": "10.10.1.165"
+      "webserver": "10.10.1.165",
+      "clan":"monster"
     },
     {
       "alias": "minotaur",
       "pool": 84,
-      "webserver": "10.10.1.161"
+      "webserver": "10.10.1.161",
+      "clan":"monster"
     },
     {
       "alias": "gorgon",
       "pool": 85,
-      "webserver": "10.10.1.156"
+      "webserver": "10.10.1.156",
+      "clan":"monster"
     },
     {
       "alias": "basilisk",
       "pool": 86,
-      "webserver": "10.10.1.152"
+      "webserver": "10.10.1.152",
+      "clan":"monster"
     },
     {
       "alias": "kraken",
       "pool": 87,
-      "webserver": "10.10.1.159"
+      "webserver": "10.10.1.159",
+      "clan":"monster"
     },
     {
       "alias": "succubus",
       "pool": 88,
-      "webserver": "10.10.1.162"
+      "webserver": "10.10.1.162",
+      "clan":"monster"
     },
     {
       "alias": "charybdis",
       "pool": 89,
-      "webserver": "10.10.1.154"
+      "webserver": "10.10.1.154",
+      "clan":"monster"
     },
     {
       "alias": "harpy",
       "pool": 90,
-      "webserver": "10.10.1.157"
+      "webserver": "10.10.1.157",
+      "clan":"monster"
     },
     {
       "alias": "wendigo",
       "pool": 91,
-      "webserver": "10.10.1.164"
+      "webserver": "10.10.1.164",
+      "clan":"monster"
     },
     {
       "alias": "lamia",
       "pool": 92,
-      "webserver": "10.10.1.160"
+      "webserver": "10.10.1.160",
+      "clan":"monster"
     },
     {
       "alias": "banshee",
       "pool": 93,
-      "webserver": "10.10.1.151"
+      "webserver": "10.10.1.151",
+      "clan":"monster"
     },
     {
       "alias": "cerberus",
       "pool": 94,
-      "webserver": "10.10.1.153"
+      "webserver": "10.10.1.153",
+      "clan":"monster"
     },
     {
       "alias": "hydra",
       "pool": 95,
-      "webserver": "10.10.1.158"
+      "webserver": "10.10.1.158",
+      "clan":"monster"
     }
   ]
   

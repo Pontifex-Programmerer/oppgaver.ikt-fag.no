@@ -22,8 +22,8 @@ async function getData(){
             const aliasArray = JSON.parse(content)
             for(entity of aliasArray){
 
-                const {alias, pool, webserver} = entity;
-                const aliasEntity = new Alias({alias, pool, webserver})
+                const {alias, pool, webserver, clan} = entity;
+                const aliasEntity = new Alias({alias, pool, webserver, clan})
                 
                 try {
                     

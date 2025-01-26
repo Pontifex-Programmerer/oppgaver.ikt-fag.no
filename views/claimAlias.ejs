@@ -1,0 +1,55 @@
+<%-include('./partials/top')%>
+<section class="input-form">
+    <% if(typeof aliasList !=='undefined' && Array.isArray(aliasList) && aliasList.length > 0) { %>
+
+    <form action="/claim-alias" method="post">
+            <h1>Claim your alias:</h1>
+            <%-include("./partials/messagefield")%>
+            <div class="row">
+                <label for='alias'>Alias:</label>
+                <select name="alias" id="alias" required>
+                    <option value=<%=typeof(alias)==='undefined' ? null:alias %> id="default">
+                        <%=typeof(alias)==='undefined' ? "select an alias":alias %>
+                    </option>
+                    <% for(listedAlias of aliasList) { %>
+                        <option value=<%=`${listedAlias}`%>><%=`${listedAlias}` %></option>
+                    <% } %>
+                </select>
+                <label for="classcode">Class: </label>
+                <select name="classcode" id="classcode" required>
+                    <% if(typeof classcode !== 'undefined') { %>
+                        <option value=<%=classcode%> ><%=classcode%></option>
+                    <% } else { %>
+                        <option value="null" id="default">Select your class</option>
+                    <% } %>
+                    <option value="ITA">ITA</option>
+                    <option value="ITB">ITB</option>
+                    <option value="IMA">IMA</option>
+                    <option value="IMB">IMB</option>
+                    <option value="IMC">IMC</option>
+                </select>
+            </div>
+            <div class="row hidden">
+                <label for="email">Email:</label>
+                <input name="email" type="email" placeholder="your email" required
+                value=<%=typeof(email) ==='undefined' ? "":email%>>
+            </div>
+            <div class="row hidden">
+                <label for="_id">_id</label>
+                <input name="_id" type="text" value="<%=typeof(_id) !== 'undefined'?_id:null%>">
+            </div>
+            <!-- Maybe password will be required here, but for now, not
+            <div class="row">
+                <label for="password">Password:</label>
+                <input name="password" type="password" placeholder="type password to confirm" required>
+            </div> -->
+            <div class="row">
+                <input type="submit" value="Complete Registration!">
+            </div>
+        </form>
+        <% } else { %>
+            <%-include('./partials/errormessage') %>
+        <% } %>
+</section>
+
+<%-include('./partials/bottom')%>

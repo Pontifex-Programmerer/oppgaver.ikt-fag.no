@@ -1,18 +1,32 @@
-<%-include('./partials/header')%>
-
-<section class="register-form">
-    <form action="" method="post">
-        <span class="full-name">
-            <label for="given-name">Given Name:</label>
-            <input type="text" name="given-name" id="given-name">
-            <label for="surname">Surname:</label>
-            <input type="text" name="surname" id="surname">
-        </span>
-        <label for="family">Hacker-Alias:</label>
-        <select name="family" id="family">
-            <option value=""></option>
-        </select>
-    </form>
+<%-include('./partials/top')%>
+<section class="input-form">
+    <form action="/register" method="post">
+            <h1>Please register!</h1>
+            <%-include("./partials/messagefield")%>
+            <div class="row">
+                <label for="givenname">Given Name:</label>
+                <input type="text" name="givenname" id="given-name" placeholder="your first name" required
+                 value=<%=typeof(givenname) ==='undefined' ? "":givenname %>>
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" placeholder="your last name" required  value=<%=typeof(surname) === 'undefined' ? "" : surname %>>
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <input name="email" type="email" placeholder="your email" required
+                value=<%=typeof(email) ==='undefined' ? "":email%>>
+            </div>
+            <div class="row">
+                <label for="password1">Password:</label>
+                <input name="password1" type="password" placeholder="password" required>
+            </div>
+            <div class="row">
+                <label for="password2">Repeat Password</label>
+                <input name="password2" type="password" placeholder="Repeat password" required>
+            </div>
+            <div class="row">
+                <input type="submit" value="Complete Registration!">
+            </div>
+        </form>
 </section>
 
 <%-include('./partials/bottom')%>

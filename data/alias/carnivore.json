@@ -2,77 +2,92 @@
     {
       "alias": "lion",
       "pool": 41,
-      "webserver": "10.10.1.181"
+      "webserver": "10.10.1.181",
+        "clan": "carnivore"
     },
     {
       "alias": "crocodile",
       "pool": 42,
-      "webserver": "10.10.1.176"
+      "webserver": "10.10.1.176",
+        "clan": "carnivore"
     },
     {
       "alias": "cheetah",
       "pool": 43,
-      "webserver": "10.10.1.174"
+      "webserver": "10.10.1.174",
+      "clan": "carnivore"
     },
     {
       "alias": "hyena",
       "pool": 44,
-      "webserver": "10.10.1.178"
+      "webserver": "10.10.1.178",
+        "clan": "carnivore"
     },
     {
       "alias": "caracal",
       "pool": 45,
-      "webserver": "10.10.1.173"
+      "webserver": "10.10.1.173",
+      "clan": "carnivore"
     },
     {
       "alias": "serval",
       "pool": 46,
-      "webserver": "10.10.1.184"
+      "webserver": "10.10.1.184",
+      "clan": "carnivore"
     },
     {
       "alias": "jackal",
       "pool": 47,
-      "webserver": "10.10.1.179"
+      "webserver": "10.10.1.179",
+      "clan": "carnivore"
     },
     {
       "alias": "wolf",
       "pool": 48,
-      "webserver": "10.10.1.185"
+      "webserver": "10.10.1.185",
+      "clan": "carnivore"
     },
     {
       "alias": "badger",
       "pool": 49,
-      "webserver": "10.10.1.172"
+      "webserver": "10.10.1.172",
+      "clan": "carnivore"
     },
     {
       "alias": "civet",
       "pool": 50,
-      "webserver": "10.10.1.175"
+      "webserver": "10.10.1.175",
+      "clan": "carnivore"
     },
     {
       "alias": "genet",
       "pool": 51,
-      "webserver": "10.10.1.177"
+      "webserver": "10.10.1.177",
+      "clan": "carnivore"
     },
     {
       "alias": "leopard",
       "pool": 52,
-      "webserver": "10.10.1.180"
+      "webserver": "10.10.1.180",
+      "clan": "carnivore"
     },
     {
       "alias": "aardwolf",
       "pool": 53,
-      "webserver": "10.10.1.171"
+      "webserver": "10.10.1.171",
+      "clan": "carnivore"
     },
     {
       "alias": "mongoose",
       "pool": 54,
-      "webserver": "10.10.1.182"
+      "webserver": "10.10.1.182",
+      "clan": "carnivore"
     },
     {
       "alias": "ratel",
       "pool": 55,
-      "webserver": "10.10.1.183"
+      "webserver": "10.10.1.183",
+      "clan": "carnivore"
     }
   ]
   
