@@ -4,9 +4,13 @@ const {
 } = require('../middleware/auth')
 
 const {
-    aliashome
+    getAliasList,
+    postClaimAlias
 } = require('../controllers/alias_controller')
 
-router.get('/alias-profile', authenticate, aliashome)
+
+router.get('/getAliasList', authenticate, getAliasList);
+
+router.post('/claim-alias', authenticate, postClaimAlias);
 
 module.exports=router;

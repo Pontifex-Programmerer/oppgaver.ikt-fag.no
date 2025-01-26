@@ -31,7 +31,7 @@ const studentSchema = new Schema({
 
 studentSchema.pre('save', async ()=>{
     try{
-        const result = await fetch("http://auth.ikt-fag.no/register")
+        const result = await fetch(process.env.AUTHSERVER);
     } catch (error){
 
     }

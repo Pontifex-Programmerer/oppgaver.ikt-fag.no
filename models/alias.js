@@ -28,6 +28,11 @@ const aliasSchema = new Schema({
         required: true,
         unique: true
     },
+    clan: {
+        type: String,
+        required: true,
+        enum: ['monster', 'bad-ai','good-ai', 'carnivore', 'monster'],
+    },
     state: {
         type: String,
         required: true,
@@ -40,10 +45,17 @@ aliasSchema.statics.claim = claim;
 /**
  * @param {*} user must be the ObjectId of a user
  * @param {*} alias must be an alias in the database
- * @returns the updated entity
+ * @returns the updated entity or null if operation failed
  */
 async function claim(user, alias){
-    return await this.findOneAndUpdate({alias},{user}, {new: true});
+    console.info(`${user} is claiming ${alias}`)
+    let result = null;
+    try {
+        const result = await this.findOneAndUpdate({alias},{user}, {new: true});
+    } catch(error){
+        console.error('Claiming user failed', error);
+    }
+    return result;
 }
 
 const Alias=mongoose.model('Alias', aliasSchema);

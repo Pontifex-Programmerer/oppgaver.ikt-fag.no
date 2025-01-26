@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const default_routes = require('./routes/default_routes');
 const alias_routes = require('./routes/alias_routes');
+const user_routes = require('./routes/user_routes');
+
 const session = require('express-session');
 const path = require('path');
 const {connectToDB} = require('./handlers/dbhandler')
@@ -24,6 +26,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 app.use(default_routes);
 app.use(alias_routes);
+app.use(user_routes);
 
 app.listen(PORT, startApp);
 
