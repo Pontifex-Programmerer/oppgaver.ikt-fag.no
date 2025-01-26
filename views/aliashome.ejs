@@ -1,0 +1,11 @@
+<%-include('./partials/top') %>
+<%-include('./partials/messagefield') %>
+<section id="alias-info">
+    <% if(typeof(aliasEntity) !== 'undefined') { %>
+        <h1><%= aliasEntity.alias %></h1>
+        <%-include('./partials/show-alias-state')%>
+    <% } %>
+</section>
+
+
+<%-include('./partials/bottom') %>

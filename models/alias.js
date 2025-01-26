@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { findOneAndUpdate } = require('./user');
 const {Schema} = mongoose;
 
 const aliasSchema = new Schema({
@@ -34,6 +35,17 @@ const aliasSchema = new Schema({
         default: 'inactive'
     }
 });
+aliasSchema.statics.claim = claim;
+
+/**
+ * @param {*} user must be the ObjectId of a user
+ * @param {*} alias must be an alias in the database
+ * @returns the updated entity
+ */
+async function claim(user, alias){
+    return await this.findOneAndUpdate({alias},{user}, {new: true});
+}
 
 const Alias=mongoose.model('Alias', aliasSchema);
+
 module.exports=Alias;

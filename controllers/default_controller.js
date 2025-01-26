@@ -71,16 +71,15 @@ const getClaimAlias = async (req, res, next, email) => {
 }
 
 const postClaimAlias = async (req, res, next) => {
-    const {alias,_id, password} = req.body;
-    console.log(password);
-    try {
-        const result = await Alias.updateOne({alias},{user:_id, state: 'approval pending'});
-        if(result){
+    const {alias,_id} = req.body;
 
+    try {
+        const aliasEntity = await Alias.claim(_id,alias);
+        if(aliasEntity){
+            res.render(`aliasHome`, {aliasEntity});
         }
     } catch (error) {
-        console.log('could not update alias', error);
-        res.render('internalerror')
+        res.render('internalerror', error);
     }
     
 }
@@ -92,25 +91,35 @@ const internalError = (req,res)=>{
 const getLogin = (req,res)=> {
     res.render('login');
 }
+
 const postLogin = async (req, res, next)=>{
     const {password,email} = req.body;
     if(password !== 'undefined' && email !== 'undefined') {
         const response = await apiPostFetch('/login-user', JSON.stringify({password, email}));
         const json = await response.json();
         const {statuscode, feedback} = json;
-
+        console.log(json);
         switch(statuscode) {
             case 401:
                 res.render('login', {message:feedback, email})
                 break;
             case 200:
-                res.redirect(`/user/${email}`);
+                const {accessToken, refreshToken} = json.payload;
+                res.cookie(
+                    'refreshToken', refreshToken,
+                    {
+                        httpOnly: true,
+                        secure: true,
+                        sameSite: 'strict'
+                    });
+                res.session.accessToken = accessToken;
+                res.redirect(`/alias-profile`);
                 break;       
             default:
                 break;         
         }
     } else{
-        res.render('login', {message:"Unkown error, please try again!", email})
+        res.render('login', {message:"Unknown error, please try again!", email})
     }
 }
 

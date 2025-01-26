@@ -1,12 +1,8 @@
-const userhome = (req,res,next)=>{
+const aliashome = (req,res,next)=>{
     const {alias} = req.params;
-    res.render('home');
-}
-
-const claimAlias = (req, res, next) => {
-
+    res.render('aliashome');
 }
 
 module.exports={
-    userhome
+    aliashome
 }
