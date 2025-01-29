@@ -1,30 +1,11 @@
-const Alias = require('../models/alias');
-const User = require('../models/user');
+const Alias = require('../models/Alias');
+const User = require('../models/Student');
 const httpFeedbackHandler = require('../handlers/httpFeedbackHandler');
 
 const internalError = (req,res)=>{
     res.render('internalError', {error});
 }
 
-async function apiPostFetch(endpoint, json){
-    const authserver = process.env.AUTHSERVER;
-    return await fetch(
-        authserver+endpoint,
-        {
-            method: "POST",
-            headers: {
-                "content-type":"application/json"
-            },
-            body: json
-        })
-}
-
-function isValidInput(...input){
-    for(input of input) {
-        console.log(input);
-        if(typeof input === 'undefined') return false;
-    }
-}
 
 module.exports={
     internalError,

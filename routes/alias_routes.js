@@ -1,15 +1,18 @@
 const router = require('express').Router();
 const {
-    authenticate
+    authenticate,
+    authorize
 } = require('../middleware/auth')
 
 const {
-    getAliasList,
+    getAllAliasEntityList,
+    getAvailableAliasList,
     postClaimAlias
 } = require('../controllers/alias_controller')
 
+router.get('/getAllAliasEntityList', authenticate, authorize, getAllAliasEntityList);
 
-router.get('/getAliasList', authenticate, getAliasList);
+router.get('/getAvailableAliasList', authenticate, getAvailableAliasList);
 
 router.post('/claim-alias', authenticate, postClaimAlias);
 
