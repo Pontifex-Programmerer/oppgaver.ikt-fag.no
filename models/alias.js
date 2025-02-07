@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { findOneAndUpdate } = require('./user');
+const { findOneAndUpdate } = require('./Student');
 const {Schema} = mongoose;
 
 const aliasSchema = new Schema({
@@ -54,7 +54,7 @@ async function claim(user, alias){
     try {
         const result = await this.findOneAndUpdate({alias},{user}, {new: true});
     } catch(error){
-        console.error('Claiming user failed', error);
+        console.error('Claiming alias failed', error);
     }
     return result;
 }

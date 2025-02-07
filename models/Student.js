@@ -5,6 +5,7 @@ const validator = require('validator');
 const { Schema } = mongoose;
 
 // Student name and email is provided by the authentication server
+// The point is to keep this as anonomous as possible
 const studentSchema = new Schema({
     auth_id: {
         type: mongoose.Schema.ObjectId,
