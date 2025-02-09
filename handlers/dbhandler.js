@@ -4,7 +4,7 @@ let db = null;
 async function connectToDB(mongostring, dbName){
     try {
         console.info(`attempting connection to database: ${mongostring}${dbName}`)
-         db = await mongoose.connect(mongostring, {dbName});
+         db = await mongoose.connect(mongostring, {dbName, autoIndex:true});
     } catch (error) {
         console.error('Error when connecting to database', error.message);
     } finally {
