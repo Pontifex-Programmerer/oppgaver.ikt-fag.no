@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { findOneAndUpdate } = require('./Student');
 const {Schema} = mongoose;
 
 const aliasSchema = new Schema({
@@ -13,9 +12,8 @@ const aliasSchema = new Schema({
     // User is the user that a student registered
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        unique: true,
         required: false,
-        default: null
+        default: undefined
     },
     // pool is the assigned pool number on vsphere
     pool: {
@@ -32,7 +30,7 @@ const aliasSchema = new Schema({
     clan: {
         type: String,
         required: true,
-        enum: ['monster', 'bad-ai','good-ai', 'carnivore', 'monster'],
+        enum: ['monster', 'creature', 'bad-ai','good-ai', 'carnivore', 'monster'],
     },
     state: {
         type: String,
@@ -41,6 +39,12 @@ const aliasSchema = new Schema({
         default: 'inactive'
     }
 });
+
+aliasSchema.index(
+    { user: 1 },
+    { unique: true, partialFilterExpression: { user: { $exists: true } } }
+  )
+
 aliasSchema.statics.claim = claim;
 
 /**
@@ -49,10 +53,12 @@ aliasSchema.statics.claim = claim;
  * @returns the updated entity or null if operation failed
  */
 async function claim(user, alias){
-    console.info(`${user} is claiming ${alias}`)
     let result = null;
     try {
-        const result = await this.findOneAndUpdate({alias},{user}, {new: true});
+        result = await this.findOneAndUpdate(
+            {alias, user:{$exists:false}},
+            {user}, 
+            {new: true});
     } catch(error){
         console.error('Claiming alias failed', error);
     }
@@ -60,5 +66,13 @@ async function claim(user, alias){
 }
 
 const Alias=mongoose.model('Alias', aliasSchema);
+
+Alias.createIndexes()
+.then(() => {
+    console.info('Alias model index implemented!');
+})
+.catch(err => {
+    console.info('An error occured in createindex of the Alias model', err);
+});
 
 module.exports=Alias;

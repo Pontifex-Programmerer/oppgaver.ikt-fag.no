@@ -47,12 +47,11 @@ const postClaimAlias = async (req, res, next) => {
     const {_id,alias} = req.body;
     try {
         const aliasEntity = await Alias.claim(_id,alias);
-        console.log('alias entity', aliasEntity)
         if(aliasEntity){
-            createFeedback(200, `Your baptism is complete. From now on you shall bear the name of ${alias}`, true, aliasEntity);
+            feedback = createFeedback(200, `Your baptism is complete. From now on you shall bear the name of ${alias}`, true, aliasEntity);
         }
     } catch (error) {
-        createFeedback(404, "An error occurred when trying to claim your alias!", false, error);
+        feedback = createFeedback(404, "An error occurred when trying to claim your alias!", false, error);
     }
     res.status(feedback.statuscode).json(feedback);
 }

@@ -43,14 +43,14 @@ const postRegister = async (req, res, next) => {
 const postLogin = async (req, res, next)=>{
     let httpFeedback = httpFeedbackHandler.accessDenied();
     const {password,email} = req.body;
+    console.info('postLogin for:', password, email);
     if(password !== 'undefined' && email !== 'undefined') {
         const response = await apiPostFetch('/login-user', JSON.stringify({password, email}));
         const json = await response.json();
         const {statuscode, feedback} = json;
-
         switch(statuscode) {
             case 401:
-                res.render('login', {message:feedback, email})
+                console.log('401', feedback);
                 break;
             case 200:
                 httpFeedback=json;
@@ -59,7 +59,7 @@ const postLogin = async (req, res, next)=>{
                 break;         
         }
     } else{
-        res.render('login', {message:"Unknown error, please try again!", email})
+        httpFeedback = httpFeedbackHandler.internalServerError()
     }
     res.status(httpFeedback.statuscode).json(httpFeedback);
 }
