@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "nodemon"
+    "startup": "npx runserver.js",
+    "dev": "npx nodemon runserver.js"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
