@@ -3,13 +3,13 @@ let db = null;
 
 async function connectToDB(mongostring, dbName){
     try {
-        console.info(`attempting connection to database: ${mongostring}${dbName}`)
+        console.info(`attempting connection to database: \n    - ${mongostring}${dbName}`)
          db = await mongoose.connect(mongostring, {dbName, autoIndex:true});
     } catch (error) {
-        console.error('Error when connecting to database', error.message);
+        console.error('FAILURE: Error when connecting to database', error.message);
     } finally {
         if(db){
-            console.info('Successfully connected to ', mongostring)
+            console.info('SUCCESS: connection established - ', mongostring)
         }
     }
 }
