@@ -26,20 +26,6 @@ const postRegister = async (req, res, next) => {
     res.status(httpFeedback.statuscode).json(httpFeedback);
 }
 
-// const postClaimAlias = async (req, res, next) => {
-//     let httpFeedback = httpFeedbackHandler.createFeedback(404, "Alias could not be claimed");
-//     const {auth_id, classCode, applicationRole,alias} = req.body;
-//     if(isValidUserInput(auth_id,classCode,applicationRole,alias)){
-//         try {
-//             const student = Student.create({auth_id,classCode,applicationRole,alias});
-//         } catch (error){
-//             console.error(error.title, error.message);
-//         }
-//     }
-
-//     res.status(httpFeedback.statuscode).json(httpFeedback);
-// }
-
 const postLogin = async (req, res, next)=>{
     let httpFeedback = httpFeedbackHandler.accessDenied();
     const {password,email} = req.body;

@@ -41,6 +41,20 @@ const getAvailableAliasList = async (req, res, next) => {
     }
     res.status(feedback.statuscode).json(feedback);
 }
+const getUserAlias = async (req, res, next) => {
+    try {
+        const {_id} = req.body;
+        const alias = await Alias.findOne({user:_id});
+        if(alias) {
+            feedback = createFeedback(200, 'Matching alias found!', true, alias);
+        } else {
+            feedback = createFeedback(200, 'User has no matching alias', false, null);
+        }
+    } catch (error) {
+        console.error('getUserAlias: controller produced an error! ', error);
+    }
+    res.status(feedback.statuscode).json(feedback);
+}
 
 const postClaimAlias = async (req, res, next) => {
     let feedback = resourceNotFound();
@@ -60,5 +74,6 @@ module.exports={
     aliashome,
     getAvailableAliasList,
     postClaimAlias,
-    getAllAliasEntityList
+    getAllAliasEntityList,
+    getUserAlias
 }

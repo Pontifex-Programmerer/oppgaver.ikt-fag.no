@@ -7,10 +7,13 @@ const {
 const {
     getAllAliasEntityList,
     getAvailableAliasList,
+    getUserAlias,
     postClaimAlias
 } = require('../controllers/alias_controller')
 
 router.get('/getAllAliasEntityList', authenticate, authorize, getAllAliasEntityList);
+
+router.get('/getUserAlias', authenticate, getUserAlias);
 
 router.get('/getAvailableAliasList', authenticate, getAvailableAliasList);
 
