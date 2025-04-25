@@ -72,7 +72,7 @@ Alias.createIndexes()
     console.info('Alias model index implemented!');
 })
 .catch(err => {
-    console.info('An error occured in createindex of the Alias model', err);
+    console.error('An error occured in createindex of the Alias model', err);
 });
 
 module.exports=Alias;
